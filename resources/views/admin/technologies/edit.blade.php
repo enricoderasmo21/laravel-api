@@ -14,7 +14,7 @@
 
             <div class="mb-3">
               <label class="form-label text-light" for="name">Nome</label>
-              <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value='{{old('name') ?? $type->name}}'>
+              <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value='{{old('name') ?? $technology->name}}'>
               
               @error('name')
               <div class="invalid-feedback">
@@ -25,7 +25,7 @@
 
             <div class="mb-3">
               <label class="form-label text-light" for="color">Colore</label>
-              <textarea type="text" class="form-control @error('color') is-invalid @enderror" id="color" name="color">{{old('color') ?? $type->color}}</textarea>
+              <textarea type="text" class="form-control @error('color') is-invalid @enderror" id="color" name="color">{{old('color') ?? $technology->color}}'</textarea>
               
               @error('color')
               <div class="invalid-feedback">

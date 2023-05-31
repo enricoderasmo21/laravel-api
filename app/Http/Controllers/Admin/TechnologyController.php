@@ -70,7 +70,7 @@ class TechnologyController extends Controller
      */
     public function edit(Technology $technology)
     {
-        return view('admin.technologies.create', compact('technology'));
+        return view('admin.technologies.edit', compact('technology'));
     }
 
     /**
